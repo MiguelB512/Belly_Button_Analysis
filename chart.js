@@ -23,6 +23,7 @@ function init() {
   // Initialize the dashboard
   init();
   
+  // Add function from html to call the build metadata and buildcharts functions
   function optionChanged(newSample) {
     // Fetch new data each time a new sample is selected
     buildMetadata(newSample);
@@ -77,7 +78,7 @@ function init() {
       // 7. Create the yticks for the bar chart.
       // Hint: Get the the top 10 otu_ids and map them in descending order  
       //  so the otu_ids with the most bacteria are last. 
-      var yticks = otuIDs.slice(0,10).map(id => "OTU " + id).reverse();
+      var yticks = otuIDs.slice(0,10).map(id => "OTU " + id + " ").reverse();
       console.log(yticks);
     
       // 8. Create the trace for the bar chart. 
@@ -98,7 +99,7 @@ function init() {
       };
       //console.log("hello");
       // 10. Use Plotly to plot the data with the layout. 
-      Plotly.newPlot("bar", barData, barLayout, {responsive: true})
+      Plotly.newPlot("bar", barData, barLayout)
 
       // 1. Create the trace for the bubble chart.
       var bubbleData = [{
