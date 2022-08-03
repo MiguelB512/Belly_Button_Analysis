@@ -85,16 +85,19 @@ function init() {
       var barData = [{
         x: sampleValues.slice(0,10).reverse(),
         text: otuLabels.slice(0,10).reverse(),
-        type: "bar"
+        type: "bar",
+        orientation: 'h'
       }];
 
       // 9. Create the layout for the bar chart. 
       var barLayout = {
         title: "10 Most Occuring Bacteria Cultures",
+        paper_bgcolor:'rgba(0,0,0,0)',
+        plot_bgcolor:'rgba(0,0,0,0)',
         yaxis: {
           tickmode: "array",
           tickvals: [0,1,2,3,4,5,6,7,8,9],
-          ticktext: yticks
+          ticktext: yticks,
         },
       };
       //console.log("hello");
@@ -118,8 +121,10 @@ function init() {
       var bubbleLayout = {
         title: 'Bacteria Cultures Per Sample',
         xaxis: {title: "OTU IDs", automargin: true},
-        yaxis: {automargin: true},
-        hovermode: "closest"
+        yaxis: {title: "Bacteria Count", automargin: true},
+        hovermode: "closest",
+        paper_bgcolor:'rgba(0,0,0,0)',
+        plot_bgcolor:'rgba(0,0,0,0)'
       };
 
       // 3. Use Plotly to plot the data with the layout.
@@ -162,6 +167,8 @@ function init() {
 		    title: { text: "<b>Belly Button Washing Frequency</b><br>Scrubs per week" },
 		    type: "indicator",
 		    mode: "gauge+number",
+        paper_bgcolor:'rgba(0,0,0,0)',
+        plot_bgcolor:'rgba(0,0,0,0)',
         gauge: {
           axis: {
             range: [null, 10],

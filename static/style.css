@@ -1,0 +1,29 @@
+/* Customize the font in the body  */
+body {
+    font-weight: bold;
+    color: #8100fa;
+    font-family: 'Courier New';
+    font-weight: bold;
+    background-color: antiquewhite;
+  }
+
+/* Add image to background of JumboTron, fill with size, and align text in center */
+.jumbotron {
+  background-image: url("image.webp");
+  font-family: 'Courier New';
+  background-size: 100% 100%;
+  color: rgb(250, 250, 250);
+  text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+  text-align: center;
+  padding-top: 6%;
+  padding-bottom: 6%;
+}
+
+h6, h5{
+    font-weight: bold;
+    color: #8100fa;
+    font-family: 'Courier New';
+    font-size: medium;
+    font-weight: bold;
+}
+
