@@ -1,2 +1,6 @@
-# Belly_Button_Analysis
-Data Analysis on different species of bacteria found in belly buttons
+# Belly Button Analysis 
+
+
+
+## Resources
+- Data Source: [Belly Button Data](samples.json) <br>
