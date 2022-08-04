@@ -4,7 +4,7 @@ In this analysis, we looked at different bacteria species that were collected fr
 
 ## Website
 The information is displayed at: https://miguelb512.github.io/Belly_Button_Analysis/. <br> <br>
-On this site, users can select different subject(ids) and see each of their characteristics <br>
+On this site, users can select different subject (ids) and see each of their characteristics <br>
 and bacteria growth in a few different visualizations (bar, scatter, gauge)
 
 Below is a preview of the site when first visited: <br> <br>
